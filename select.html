@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="select.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <form name="testForm">
+        <fieldset>
+          <ul>
+            <li>
+              <label for="userName">이름</label>
+              <input type="text" id="userName" name="userName" />
+            </li>
+            <li>
+              <label for="class">수업</label>
+              <select name="major" id="major">
+                <option>학과 선택</option>
+                <option value="컴퓨터 공학과">컴퓨터 공학과</option>
+                <option value="전기공학과">전기공학과</option>
+                <option value="전자공학과">전자공학과</option>
+                <option value="물리학과">물리학과</option>
+                <option value="기계공학과">기계공학과</option>
+              </select>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <div id="time">
+            <label for=""
+              ><input type="radio" name="time" value="1타임" />1타임</label
+            >
+            <label for=""
+              ><input type="radio" name="time" value="2타임" />2타임</label
+            >
+            <label for=""
+              ><input type="radio" name="time" value="3타임" />3타임</label
+            >
+          </div>
+        </fieldset>
+        <fieldset>
+          <div id="day">
+            <label for=""><input type="checkbox" value="아침" />아침</label>
+            <label for=""><input type="checkbox" value="점심" />점심</label>
+            <label for=""><input type="checkbox" value="저녁" />저녁</label>
+          </div>
+        </fieldset>
+        <button id="output">출력</button>
+      </form>
+    </div>
+    <div id="show"></div>
+  </body>
+</html>
